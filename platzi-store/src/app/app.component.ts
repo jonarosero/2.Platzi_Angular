@@ -9,6 +9,7 @@ import { Product } from './product.model';
 })
 export class AppComponent {
   title = 'platzi-store';
+  power = 10;
 
   items = ['juan', 'nicolas', 'yo'];
 
@@ -33,6 +34,27 @@ export class AppComponent {
       img: 'https://images.unsplash.com/photo-1481973946307-512988dde8b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       price: 8000,
       description: 'blablablalba'
+    },
+    {
+      id: '4',
+      title: 'Pin',
+      img: 'https://images.unsplash.com/photo-1569803237283-4af155d9e52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+      price: 8000,
+      description: 'bllkjlkjokj'
+    },
+    {
+      id: '5',
+      title: 'Stickers',
+      img: 'https://images.unsplash.com/photo-1573434490486-3cab65054136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+      price: 8000,
+      description: 'bllkjlkjokj'
+    },
+    {
+      id: '6',
+      title: 'Console',
+      img: 'https://images.unsplash.com/photo-1545958090-5a8a3589718a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+      price: 8000,
+      description: 'bllkjlkjokj'
     },
 
   ];

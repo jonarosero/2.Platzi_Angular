@@ -13,11 +13,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-  ngAfterViewInit(){
-    this.mySwiper = new Swiper ('.swiper-container');
+  ngAfterViewInit() {
+    this.mySwiper = new Swiper('.swiper-container');
   }
 
 }

@@ -21,8 +21,41 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
       const id = params.id;
-      this.product = this.productsService.getProduct(id);
+      this.fetchProduct(id);
     });
+  }
+
+  fetchProduct(id: string){
+    this.productsService.getProduct(id)
+    .subscribe(product => {this.product = product;
+    });
+  }
+
+  createProduct(){
+    const newProduct: Product = {
+      id: '5',
+      title: 'title',
+      image: 'assets/images/camiseta.png',
+      description: 'blalbkasdokfoiajsd',
+      price: 20
+    };
+    this.productsService.createProduct(newProduct)
+    .subscribe();
+  }
+
+  updateProduct(){
+    const updateProduct: Partial<Product> = {
+      title: 'edición',
+      description: 'quien come trigo si tiene un trigal',
+      price: 1020
+    };
+    this.productsService.updateProduct('5', updateProduct)
+    .subscribe();
+  }
+
+  deleteProduct(){
+    this.productsService.deleteProduct('5')
+    .subscribe();
   }
 
 }
